@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func isReflected(points [][]int) bool {
 	mp := map[[2]int]bool{}
 	inf := 1 << 30
@@ -21,8 +19,4 @@ func isReflected(points [][]int) bool {
 		}
 	}
 	return true
-}
-
-func main() {
-	fmt.Println(isReflected([][]int{{1, 3}, {-1, 2}}))
 }
